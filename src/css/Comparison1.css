@@ -12,6 +12,7 @@ p {
   font-size: 21pt;
   justify-content: center;
   display: inline-block;
+  max-width: 1100px;
 }
 
 .info-box {

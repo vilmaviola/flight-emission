@@ -29,3 +29,15 @@
   margin: 0 auto;
   margin-top: 2em;
 }
+
+.info-box--carbon {  
+    justify-content: center;
+    background: rgba(196, 196, 196, 0.62);
+    border: 0.1px solid #000000;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 18pt;
+    margin-top: 1em;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+  }
+  

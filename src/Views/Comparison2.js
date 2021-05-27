@@ -177,18 +177,19 @@ function Comparison2({ match }) {
         <h1>Household Electricity</h1>
         <div className="start-subheading">
         {/* <p>An air trip from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2</p> */}
-        <p>An air trip from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2. </p>
-
+          <p>An air trip from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2. </p>
+          
+          <div className="info-box--carbon">            
             <div className="tooltip">
-            <img src={infoLogo} className="info-logotype" alt="info-logo"/>
-            <span className="tooltiptext">
-                    <p className="tooltiptext-title">A household’s consumption of electricity for a whole year</p>
-                    <p className="tooltiptext-text">In Sweden, a normal energy consumption for a villa is about 20,000 kWh/year.</p>
-                    <p className="tooltiptext-text">This is equal to 1800 kg CO2.</p>
-                </span>
+              <img src={infoLogo} className="info-logotype" alt="info-logo"/>
+              <span className="tooltiptext">
+                  <p className="tooltiptext-title">A household’s consumption of electricity for a whole year</p>
+                  <p className="tooltiptext-text">In Sweden, a normal energy consumption for a villa is about 20,000 kWh/year.</p>
+                  <p className="tooltiptext-text">This is equal to 1800 kg CO2.</p>
+              </span>
             </div>
-            
-            <p>That is equal to {electricity_percent}% of a household´s electricity consumption for a whole year</p>
+              <p>That is equal to {electricity_percent}% of a household´s electricity consumption for a whole year</p>
+            </div>
         </div>
 
 

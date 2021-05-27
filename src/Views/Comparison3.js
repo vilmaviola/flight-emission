@@ -25,7 +25,7 @@ function Comparison3({ match }) {
                 </span>
             </div>
 
-            <p>To reduce the same amount of kilograms CO2 that this trip emits you would have to recycle {recycled_plastic}kg plastic.</p>
+            <p>To reduce the same amount of kilograms CO2 that this trip emits you would have to recycle {recycled_plastic}kg of plastic.</p>
         </div>
 
         {/* <div className="info-box--recycle"> */}
@@ -45,7 +45,7 @@ function Comparison3({ match }) {
                     </span>
                 </div>
 
-                <p>It will take you approx. {number_years} years to recycle {recycled_plastic}kg plastic.</p>
+                <p>It will take you approx. {number_years} years to recycle {recycled_plastic}kg of plastic.</p>
             </div>
 
         {/* </div> */}

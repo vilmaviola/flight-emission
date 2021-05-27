@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-            <Link to={"/" } style={{ textDecoration: 'none'}}>
+            <Link to={"/flight-emission/" } style={{ textDecoration: 'none'}}>
               <p className="header-btn">Calculate new trip</p>
             </Link>
 
@@ -28,7 +28,7 @@ function App() {
         {/* <Fragment> */}
           <ScrollToTop />
           <Switch>
-            <Route path="/" exact component={Start}/>
+            <Route path="/flight-emission/" exact component={Start}/>
             <Route path="/:from/:destination/:roundTrip" exact component={Comparison1}/>
             <Route path="/:from/:destination/:roundTrip/:emissions/household" exact component={Comparison2}/>
             <Route path="/:from/:destination/:roundTrip/:emissions/plastic-recycle" exact component={Comparison3}/>

@@ -11,7 +11,7 @@ function Information3() {
               Carbon dioxide is a huge factor of global warming since the gas absorbs and radiates heat. It is a good reason to be very concerned about CO2 emissions.
             </p>
             <p>
-              In 2020 Sweden had an emission average of XXX CO2 per capita. This number can be decreased massively on an individual level if flying is reduced.
+              In 2019 Sweden had an emission average of 4,45 tonnes CO2 per capita. This number can be decreased massively on an individual level if flying is reduced.
               Individual behaviour is important to decrease the individual carbon footprint and can also be of importance when it comes to impact other individuals.
             </p>
           </div>
