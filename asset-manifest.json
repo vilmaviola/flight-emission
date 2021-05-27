@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/flight-emission/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/flight-emission/static/js/main.4dc3b2b7.chunk.js",
+    "main.js.map": "/flight-emission/static/js/main.4dc3b2b7.chunk.js.map",
+    "runtime-main.js": "/flight-emission/static/js/runtime-main.1d43354c.js",
+    "runtime-main.js.map": "/flight-emission/static/js/runtime-main.1d43354c.js.map",
+    "static/js/2.e30cf9dd.chunk.js": "/flight-emission/static/js/2.e30cf9dd.chunk.js",
+    "static/js/2.e30cf9dd.chunk.js.map": "/flight-emission/static/js/2.e30cf9dd.chunk.js.map",
+    "static/js/3.cc973f99.chunk.js": "/flight-emission/static/js/3.cc973f99.chunk.js",
+    "static/js/3.cc973f99.chunk.js.map": "/flight-emission/static/js/3.cc973f99.chunk.js.map",
+    "index.html": "/flight-emission/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/flight-emission/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.e30cf9dd.chunk.js.LICENSE.txt": "/flight-emission/static/js/2.e30cf9dd.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/flight-emission/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d43354c.js",
+    "static/js/2.e30cf9dd.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.4dc3b2b7.chunk.js"
+  ]
+}
