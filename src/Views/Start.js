@@ -125,7 +125,7 @@ function Start() {
 
         </div>
 
-        <Link to={`/${from}/${destination}/${roundTrip}`}>
+        <Link to={`/flight-emission/${from}/${destination}/${roundTrip}`}>
             <button className="btn" id="calculate">Calculate</button>
         </Link>
     </div>

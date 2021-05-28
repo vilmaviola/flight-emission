@@ -200,8 +200,7 @@ function Comparison2({ match }) {
     <div>
         <h1>Household Electricity</h1>
         <div className="start-subheading">
-          {airTripText()}
-          
+          {airTripText()}          
           <div className="info-box--carbon">            
             <div className="tooltip">
               <img src={infoLogo} className="info-logotype" alt="info-logo"/>
@@ -218,7 +217,7 @@ function Comparison2({ match }) {
         {displayCalenderComparison()}
 
         <div className="next-btn">
-            <Link to={`/${match.params.from}/${match.params.destination}/${match.params.roundTrip}/${match.params.emissions}/plastic-recycle`}>
+            <Link to={`/flight-emission/${match.params.from}/${match.params.destination}/${match.params.roundTrip}/${match.params.emissions}/plastic-recycle`}>
                 <button className="btn">Next</button>
             </Link>
         </div>

@@ -292,7 +292,7 @@ function Comparison1({ match }) {
           {displayCalenderComparison()}
 
         <div className="next-btn">
-            <Link to={`/${fly_from}/${fly_to}/${match.params.roundTrip}/${carbon_emission}/household`}>
+            <Link to={`/flight-emission/${fly_from}/${fly_to}/${match.params.roundTrip}/${carbon_emission}/household`}>
                 <button className="btn">Next</button>
             </Link>
         </div>

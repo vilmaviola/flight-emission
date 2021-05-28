@@ -6,15 +6,19 @@ import Information1 from '../Components/Information1';
 import Information2 from '../Components/Information2';
 import Information3 from '../Components/Information3';
 import arrowDown from '../images/chevron-down2.png';
+import arrowUp from '../images/chevron-up2.png';
 
 function Information() {
   const [info1, setInfo1] = useState(false);
   const [info2, setInfo2] = useState(false);
   const [info3, setInfo3] = useState(false);
 
+  let img_src = arrowDown;
+
 function changeOnClick (info, setInfo) {
   if (info == true) {
     setInfo(false);
+
   } else {
     setInfo(true);
   }
@@ -26,17 +30,17 @@ function changeOnClick (info, setInfo) {
         <ul className="info-categories">
 
             <li onClick={() => changeOnClick(info1, setInfo1)}>The estimates and the calculations
-              <img src={arrowDown} className="arrow-down" alt="arrow-down" onClick={() => changeOnClick(info1, setInfo1)}/>
+              <img src={img_src} className="arrow-down" alt="arrow-down" onClick={() => changeOnClick(info1, setInfo1)}/>
             </li>
               {info1 === true && <Information1></Information1>}
            
             <li onClick={() => changeOnClick(info2, setInfo2)}>The Paris agreement and the IPCC
-              <img src={arrowDown} className="arrow-down" alt="arrow-down" onClick={() => changeOnClick(info2, setInfo2)}/>
+              <img src={img_src} className="arrow-down" alt="arrow-down" onClick={() => changeOnClick(info2, setInfo2)}/>
             </li>
               {info2 === true && <Information2></Information2>}
 
             <li onClick={() => changeOnClick(info3, setInfo3)}>Guidlines on how to travel without flying
-              <img src={arrowDown} className="arrow-down" alt="arrow-down" onClick={() => changeOnClick(info3, setInfo3)}/>
+              <img src={img_src} className="arrow-down" alt="arrow-down" onClick={() => changeOnClick(info3, setInfo3)}/>
             </li>
               {info3 === true && <Information3></Information3>}
 

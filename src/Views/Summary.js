@@ -102,7 +102,7 @@ function Summary({ match }) {
         <div className="footer"></div>
 
         <div className="next-btn">
-          <Link to={"/info"} style={{ textDecoration: 'none'}} className="more-info">
+          <Link to={"/flight-emission/info"} style={{ textDecoration: 'none'}} className="more-info">
             <button className="btn">More info</button>
           </Link>
         </div>

@@ -62,7 +62,7 @@ function Comparison3({ match }) {
             </div>
 
         <div className="next-btn">
-            <Link to={`/${match.params.from}/${match.params.destination}/${match.params.roundTrip}/${match.params.emissions}/summary`}>
+            <Link to={`/flight-emission/${match.params.from}/${match.params.destination}/${match.params.roundTrip}/${match.params.emissions}/summary`}>
                 <button className="btn">Summary</button>
             </Link>
         </div>
