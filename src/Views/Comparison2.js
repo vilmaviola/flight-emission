@@ -146,19 +146,43 @@ function Comparison2({ match }) {
 
   function displayCalenderComparison() {
     if (electricity_percent > 100) {
-      const years_used = Math.round(months_used/12);
-      return(
-        <div className="calender-wrap-div-container">
-            {/* <div className="calender-wrap--first-p"> */}
-            <div className="calender-wrap-div"  style={{ marginRight: '2em'}}>
-                <p style={{ maxWidth: '800px'}}>A household would live without electricity for the next {months_used} months (almost {years_used} whole years)</p>
-                {/* <p style={{ fontSize: '18pt', fontWeight: 'bold'}}>Which equals almost {years_used} whole years</p> */}
-            </div>
-            <div className="calender-wrap-div">
-                <p>Or {number_of_houses} households would live without electricity for 1 year</p>
-            </div>
-        </div>
-      );
+      const years_used = months_used/12;
+      const years_used_rounded = Math.round(months_used/12);
+      let year_s = "";
+
+      if (years_used_rounded === 1) {
+        year_s = "year";
+      } else {
+        year_s = "years";
+      }
+
+      if(years_used > years_used_rounded) {
+        return(
+          <div className="calender-wrap-div-container">
+              <div className="calender-wrap-div"  style={{ marginRight: '2em'}}>
+                  <p style={{ maxWidth: '800px'}}>A household would live without electricity for the next {months_used} months (over {years_used_rounded} whole {year_s})</p>
+              </div>
+              <div className="calender-wrap-div">
+                  <p>Or {number_of_houses} households would live without electricity for 1 year</p>
+              </div>
+          </div>
+        );
+
+      }
+      else {
+        return(
+          <div className="calender-wrap-div-container">
+              <div className="calender-wrap-div"  style={{ marginRight: '2em'}}>
+                  <p style={{ maxWidth: '800px'}}>A household would live without electricity for the next {months_used} months (almost {years_used_rounded} whole {year_s})</p>
+              </div>
+              <div className="calender-wrap-div">
+                  <p>Or {number_of_houses} households would live without electricity for 1 year</p>
+              </div>
+          </div>
+        );
+      }
+
+
     } else {
       return(
 

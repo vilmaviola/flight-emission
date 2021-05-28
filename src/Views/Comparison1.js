@@ -230,14 +230,34 @@ function Comparison1({ match }) {
 
   function displayCalenderComparison() {
     if (budget_percent > 100) {
-      const years_used = Math.round(months_used/12);
+      const years_used = months_used/12;
+      const years_used_rounded = Math.round(months_used/12);
+      let year_s = "";
 
-      return(
-        <div className="calender-wrap">
-          <p className="calender-wrap--first-p">This means that you have used up your carbon budget for the next {months_used} months</p>
-          <p style={{ fontSize: '18pt', fontWeight: 'bold'}}>That equals your budget for almost {years_used} whole years</p>
-        </div>
-      );
+      if (years_used_rounded === 1) {
+        year_s = "year";
+      } else {
+        year_s = "years";
+      }
+
+      if(years_used > years_used_rounded) {
+        return(
+          <div className="calender-wrap">
+            <p className="calender-wrap--first-p">This means that you have used up your carbon budget for the next {months_used} months</p>
+            <p style={{ fontSize: '18pt', fontWeight: 'bold'}}>That equals your budget for over {years_used_rounded} whole {year_s}</p>
+          </div>
+        );
+
+      }
+      else {
+        return(
+          <div className="calender-wrap">
+            <p className="calender-wrap--first-p">This means that you have used up your carbon budget for the next {months_used} months</p>
+            <p style={{ fontSize: '18pt', fontWeight: 'bold'}}>That equals your budget for almost {years_used_rounded} whole {year_s}</p>
+          </div>
+        );
+      }
+
     } else {
       return(
         <div className="calender-wrap">
