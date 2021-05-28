@@ -54,7 +54,7 @@ function Comparison1({ match }) {
     }
   }
 
-  function chartDivText() {
+  function airTripText() {
     if (match.params.roundTrip == "true") {
       return (
         <p>A roundtrip flight between {fly_from} and {fly_to} equals {budget_percent}% of your individual carbon budget for a whole year</p>
@@ -87,7 +87,7 @@ function Comparison1({ match }) {
                         <p className="tooltiptext-text">This air trip corresponds to a carbon emission of {carbon_emission} kg</p>
                     </span>
                   </div>        
-                  {chartDivText()}
+                  {airTripText()}
                   <p>That means you would go {over_budget}% over your CO2 budget that you have for 1 year</p>
               </div>
               
@@ -108,7 +108,7 @@ function Comparison1({ match }) {
                         <p className="tooltiptext-text">This air trip corresponds to a carbon emission of {carbon_emission} kg</p>
                     </span>
                   </div>        
-                  {chartDivText()}
+                  {airTripText()}
               </div>
 
             <div className="chart">

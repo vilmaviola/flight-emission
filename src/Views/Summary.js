@@ -43,11 +43,24 @@ function Summary({ match }) {
     }
   }
 
+  function airTripText() {
+    if (match.params.roundTrip == "true") {
+      return (
+        <p>A roundtrip flight between {match.params.from} and {match.params.destination} corresponds to an emission of {match.params.emissions}kg CO2</p>
+      );
+    }
+    else {
+      return(
+        <p>A one-way flight from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2. </p>
+      );
+    }
+  }
+
   return (
     <div className="start">
         <h1>Summary</h1>
         <div className="start-subheading">
-          <p>An air trip from {match.params.from} to {match.params.destination} corresponds to a corbon emission of {match.params.emissions}kg</p>
+          {airTripText()}
         </div>
 
         <div className="summary-container">
@@ -87,7 +100,7 @@ function Summary({ match }) {
         </ul> 
 
         <div className="footer"></div>
-        
+
         <div className="next-btn">
           <Link to={"/info"} style={{ textDecoration: 'none'}} className="more-info">
             <button className="btn">More info</button>

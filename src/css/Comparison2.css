@@ -40,4 +40,16 @@
     margin-top: 1em;
     padding: 0.1em 0.5em 0.1em 0.5em;
   }
+
+  #calender-wrap--first-p {
+    justify-content: center;
+    border: 3px solid rgba(241, 28, 14, 0.55);
+
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 18pt;
+    margin-top: 1em;
+    padding: 1em 1em 1em 1em;
+  }
+
   

@@ -9,11 +9,26 @@ function Comparison3({ match }) {
     const recycled_plastic = Math.round((match.params.emissions/1.5) * 100) / 100;
     const number_years = Math.round(recycled_plastic/8);
 
+    function airTripText() {
+        if (match.params.roundTrip == "true") {
+          return (
+            <p>A roundtrip flight between {match.params.from} and {match.params.destination} corresponds to an emission of {match.params.emissions}kg CO2</p>
+
+          );
+        }
+        else {
+          return(
+            <p>A one-way flight from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2. </p>
+          );
+        }
+      }
+    
+
   return (
     <div>
         <h1>Plastic Recycle</h1>
         <div className="start-subheading">
-            <p>An air trip from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions}kg CO2</p>
+            {airTripText()}
         </div>
 
         <div className="info-box--carbon">            

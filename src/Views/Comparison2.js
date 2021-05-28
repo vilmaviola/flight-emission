@@ -170,12 +170,11 @@ function Comparison2({ match }) {
         );
       }
 
-
     } else {
       return(
 
         <div className="calender-wrap">
-            <p className="calender-wrap--first-p">This means that you would leave a household without electricity for {months_used} months of the year</p>
+            <p id="calender-wrap--first-p" >And means that you would leave a household without electricity for {months_used} months of the year</p>
             {get_calender_img()}
             <p className="calender-wrap--second-p">That leaves {months_left} months that a household would have electricity</p>
         </div>
@@ -184,11 +183,24 @@ function Comparison2({ match }) {
     }
   }
 
+  function airTripText() {
+    if (match.params.roundTrip == "true") {
+      return (
+        <p>A roundtrip flight between {match.params.from} and {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2. </p>
+      );
+    }
+    else {
+      return(
+        <p>A one-way flight from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2. </p>
+      );
+    }
+  }
+
   return (
     <div>
         <h1>Household Electricity</h1>
         <div className="start-subheading">
-          <p>An air trip from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2. </p>
+          {airTripText()}
           
           <div className="info-box--carbon">            
             <div className="tooltip">
