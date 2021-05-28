@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/flight-emission/static/css/main.fe343d62.chunk.css",
-    "main.js": "/flight-emission/static/js/main.92a31f17.chunk.js",
-    "main.js.map": "/flight-emission/static/js/main.92a31f17.chunk.js.map",
-    "runtime-main.js": "/flight-emission/static/js/runtime-main.98cdf860.js",
-    "runtime-main.js.map": "/flight-emission/static/js/runtime-main.98cdf860.js.map",
-    "static/js/2.d3c836d3.chunk.js": "/flight-emission/static/js/2.d3c836d3.chunk.js",
-    "static/js/2.d3c836d3.chunk.js.map": "/flight-emission/static/js/2.d3c836d3.chunk.js.map",
-    "static/js/3.75bfa99f.chunk.js": "/flight-emission/static/js/3.75bfa99f.chunk.js",
-    "static/js/3.75bfa99f.chunk.js.map": "/flight-emission/static/js/3.75bfa99f.chunk.js.map",
+    "main.css": "/flight-emission/static/css/main.4fb534ae.chunk.css",
+    "main.js": "/flight-emission/static/js/main.2b17d45f.chunk.js",
+    "main.js.map": "/flight-emission/static/js/main.2b17d45f.chunk.js.map",
+    "runtime-main.js": "/flight-emission/static/js/runtime-main.7f7dffc4.js",
+    "runtime-main.js.map": "/flight-emission/static/js/runtime-main.7f7dffc4.js.map",
+    "static/js/2.9ca18917.chunk.js": "/flight-emission/static/js/2.9ca18917.chunk.js",
+    "static/js/2.9ca18917.chunk.js.map": "/flight-emission/static/js/2.9ca18917.chunk.js.map",
+    "static/js/3.05bde6a3.chunk.js": "/flight-emission/static/js/3.05bde6a3.chunk.js",
+    "static/js/3.05bde6a3.chunk.js.map": "/flight-emission/static/js/3.05bde6a3.chunk.js.map",
     "index.html": "/flight-emission/index.html",
-    "static/css/main.fe343d62.chunk.css.map": "/flight-emission/static/css/main.fe343d62.chunk.css.map",
-    "static/js/2.d3c836d3.chunk.js.LICENSE.txt": "/flight-emission/static/js/2.d3c836d3.chunk.js.LICENSE.txt",
+    "static/css/main.4fb534ae.chunk.css.map": "/flight-emission/static/css/main.4fb534ae.chunk.css.map",
+    "static/js/2.9ca18917.chunk.js.LICENSE.txt": "/flight-emission/static/js/2.9ca18917.chunk.js.LICENSE.txt",
     "static/media/0.5f58f054.png": "/flight-emission/static/media/0.5f58f054.png",
     "static/media/0.be1fafb7.png": "/flight-emission/static/media/0.be1fafb7.png",
     "static/media/1.3aef0f75.png": "/flight-emission/static/media/1.3aef0f75.png",
@@ -44,9 +44,9 @@
     "static/media/unlit_bulb.4d681a6d.jpg": "/flight-emission/static/media/unlit_bulb.4d681a6d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.98cdf860.js",
-    "static/js/2.d3c836d3.chunk.js",
-    "static/css/main.fe343d62.chunk.css",
-    "static/js/main.92a31f17.chunk.js"
+    "static/js/runtime-main.7f7dffc4.js",
+    "static/js/2.9ca18917.chunk.js",
+    "static/css/main.4fb534ae.chunk.css",
+    "static/js/main.2b17d45f.chunk.js"
   ]
 }
