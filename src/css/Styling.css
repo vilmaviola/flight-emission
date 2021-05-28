@@ -1,0 +1,88 @@
+.btn {
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    background: none;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14pt;
+    transition: transform 200ms ease-in-out;
+    text-transform: uppercase;
+    border: 1px solid black;
+    outline: none;
+}
+  
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.next-btn {
+    padding-top: 2em;
+  }
+
+input {
+    margin-right: 5em;
+    padding: 0.5em 1em 0.5em;
+}  
+
+li {
+    margin: 2em 0;
+    color: #282c34;
+    display: list-item;
+}
+
+h1 {
+    color: #282c34;
+    font-size: 28pt;
+    margin-top: 2em;
+}
+  
+p {
+    color: #282c34;
+}
+
+.start-subheading {
+    font-size: 21pt;
+    justify-content: center;
+    display: inline-block;
+    max-width: 1100px;
+}
+
+.tooltip {
+    float: right;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    max-width: fit-content;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    position: absolute;
+    z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+  
+.tooltiptext-title{
+    font-weight: bold;
+    font-size: 12pt;
+}
+  
+.tooltiptext-text{
+    font-size: 11pt;
+}
+
+.info-logotype {
+    max-width: 25px;
+    max-height: 25px;
+    opacity: 80%;
+}

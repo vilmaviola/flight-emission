@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../css/Comparison1.css';
+import '../css/Styling.css';
 import {Link} from 'react-router-dom';
 import haversine from 'haversine-distance';
 import BarChart from '../Components/BarChart';
@@ -26,34 +27,19 @@ function Comparison1({ match }) {
   let fly_to = match.params.destination.toLowerCase();
   fly_to = fly_to.charAt(0).toUpperCase() + fly_to.slice(1);
 
-  console.log(fly_from);
-  console.log(fly_to);
-
   for (var i = 0; i < json.length; i++){
-    //console.log(json[i]);
     if (json[i].city == match.params.from){
-      //console.log(json[i].airport_name);
     }
   }
 
-  function get_longLat_from() {
+  function get_longLat(place) {
+    console.log(place);
     for(i in json) {
-      if (json[i].airport_name == match.params.from){
-        let from_latitude = json[i].lat_dec_deg;
-        let from_longitude = json[i].long_dec_deg;
-        const from_long_lat = { latitude: from_latitude, longitude: from_longitude }
-        return from_long_lat;
-       }
-    }
-  }
-
-  function get_longLat_to() {
-    for(i in json) {
-      if (json[i].airport_name == match.params.destination){
-        let to_latitude = json[i].lat_dec_deg;
-        let to_longitude = json[i].long_dec_deg;
-        const to_long_lat = { latitude: to_latitude, longitude: to_longitude }
-        return to_long_lat;
+      if (json[i].airport_name == place){
+        let latitude_ = json[i].lat_dec_deg;
+        let longitude_ = json[i].long_dec_deg;
+        const long_lat = { latitude: latitude_, longitude: longitude_ }
+        return long_lat;
        }
     }
   }
@@ -70,7 +56,7 @@ function Comparison1({ match }) {
     }
   }
 
-  const total_distance = calculate_distance(get_longLat_from(), get_longLat_to());
+  const total_distance = calculate_distance(get_longLat(match.params.from), get_longLat(match.params.destination));
   const carbon_emission = Math.round((0.133 * total_distance) * 100) / 100;
   const carbon_budget = 2000;
   const budget_percent = Math.round((carbon_emission/carbon_budget * 100) * 100) / 100;
@@ -270,7 +256,6 @@ function Comparison1({ match }) {
     }
   }
 
-
   return (
     <div className="start">
 
@@ -289,7 +274,6 @@ function Comparison1({ match }) {
 
             
             <p>To achieve the goals set out in the Paris Agreement, <br/>you have a personal individual carbon budget of 2 000 kg per year</p>
-        {/* <p className="start-subheading">An air trip from {match.params.from} to {match.params.destination} corresponds to a carbon emission of {carbon_emission} kg</p> */}
         </div>
 
          {return_BarCharts()}

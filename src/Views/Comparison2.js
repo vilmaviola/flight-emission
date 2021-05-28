@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import "../css/Comparison2.css";
+import '../css/Styling.css';
 import {Link} from 'react-router-dom';
 import infoLogo from '../images/information-logotype.png';
 import home from '../images/home-page.png';
@@ -131,19 +132,6 @@ function Comparison2({ match }) {
     }
   }
 
-/*   function render_houses() {
-    console.log(number_of_houses);
-    let count_houses = 0;
-
-      while (number_of_houses =! 0) {
-        console.log(number_of_houses);
-        number_of_houses -= 1;
-        count_houses += 1;
-      }
-      console.log(count_houses);
-
-  } */
-
   function displayCalenderComparison() {
     if (electricity_percent > 100) {
       const years_used = months_used/12;
@@ -200,7 +188,6 @@ function Comparison2({ match }) {
     <div>
         <h1>Household Electricity</h1>
         <div className="start-subheading">
-        {/* <p>An air trip from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2</p> */}
           <p>An air trip from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2. </p>
           
           <div className="info-box--carbon">            
@@ -216,34 +203,7 @@ function Comparison2({ match }) {
             </div>
         </div>
 
-
-
-{/*         <div className="start-subheading">
-            <p>An air trip from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2</p>
-
-        </div>
-
-        <div className="info-box">            
-            <div className="tooltip">
-                <img src={infoLogo} className="info-logotype" alt="info-logo"/>
-                <span className="tooltiptext">
-                    <p className="tooltiptext-title">A household’s consumption of electricity for a whole year</p>
-                    <p className="tooltiptext-text">In Sweden, a normal energy consumption for a villa is about 20,000 kWh/year.</p>
-                    <p className="tooltiptext-text">This is equal to 1800 kg CO2.</p>
-                </span>
-            </div>
-            
-            <p>This equals {electricity_percent}% of a household´s electricity consumption for a whole year</p>
-
-        </div> */}
-        
-{/*         <div className="calender-wrap">
-            <p className="calender-wrap--first-p">This means that you would have used up the electricity for {months_used} months of the next year</p>
-            {get_calender_img()}
-            <p className="calender-wrap--second-p">That leaves {months_left} months you can live with electricity</p>
-        </div> */}
         {displayCalenderComparison()}
-
 
         <div className="next-btn">
             <Link to={`/${match.params.from}/${match.params.destination}/${match.params.roundTrip}/${match.params.emissions}/plastic-recycle`}>

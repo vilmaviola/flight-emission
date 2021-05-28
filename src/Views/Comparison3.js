@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import "../css/Comparison3.css";
+import '../css/Styling.css';
 import {Link} from 'react-router-dom';
 import infoLogo from '../images/information-logotype.png';
 import plastic_recycle from '../images/plastic.png';
-
 
 function Comparison3({ match }) {
     const recycled_plastic = Math.round((match.params.emissions/1.5) * 100) / 100;
@@ -28,8 +28,6 @@ function Comparison3({ match }) {
             <p>To reduce the same amount of kilograms CO2 that this trip emits you would have to recycle {recycled_plastic}kg of plastic.</p>
         </div>
 
-        {/* <div className="info-box--recycle"> */}
-
             <div className="recycling_bin_container">
                 <p>{recycled_plastic} kg plastic</p>
                 <img src={plastic_recycle} className="recycling_bin" alt="Plastic recycling bin" />
@@ -47,8 +45,6 @@ function Comparison3({ match }) {
 
                 <p>It will take you approx. {number_years} years to recycle {recycled_plastic}kg of plastic.</p>
             </div>
-
-        {/* </div> */}
 
         <div className="next-btn">
             <Link to={`/${match.params.from}/${match.params.destination}/${match.params.roundTrip}/${match.params.emissions}/summary`}>

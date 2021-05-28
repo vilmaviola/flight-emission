@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import "../css/Start.css";
+import '../css/Styling.css';
 import {Link} from 'react-router-dom';
 var json = require('../airports.json'); 
 
@@ -11,11 +12,6 @@ function Start() {
   const [matches_to, setMatchesTo] = useState([]);
   const [suggestionsFromVisible, setFromVisible] = useState(true);
   const [suggestionsToVisible, setToVisible] = useState(true);
-
-
-  //const data = [Object.values(json)];
-  //console.log(json);
-  //console.log(Object.values(json).filter(user => user.airport_name === 'ARLANDA'));
 
   function onCheckboxChange() {
     if (roundTrip === 'true') {
@@ -29,7 +25,6 @@ function Start() {
 
   const searchFrom_testing = async searchText => {
     setFrom(searchText);
-    //get match to text input
     let matches = Object.values(json).filter(airport => {
       const regex = new RegExp(`^${searchText.toUpperCase()}`, 'g');
       return airport.airport_name.match(regex) || airport.city.match(regex);
@@ -68,7 +63,6 @@ function Start() {
 
   const searchTo_testing = async searchText => {
     setDestination(searchText);
-    //get match to text input
     let matches = Object.values(json).filter(airport => {
       const regex = new RegExp(`^${searchText.toUpperCase()}`, 'g');
       return airport.airport_name.match(regex) || airport.city.match(regex);
@@ -108,7 +102,6 @@ function Start() {
 
   return (
     <div className="start">
-        {/* <h1>Flight emission calculator</h1> */}
         <p className="intro-title ">Calculate carbon emissions for air trip:</p>
 
         <div className="wrapper">

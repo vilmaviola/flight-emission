@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import "../css/Summary.css";
+import '../css/Styling.css';
 import {Link} from 'react-router-dom';
 import unlit from '../images/unlit_bulb.jpg';
 import lit from '../images/lit_bulb.jpg';
@@ -78,24 +79,6 @@ function Summary({ match }) {
           </div>
         </div>
 
-{/*         <div className="take-away-container">
-          <div className="take-away">
-              <h3>Take away:</h3>
-              <p>Flying has a huge impact on your individual carbon footprint and takes up a huge part of you individual carbon budget.</p>
-          </div>
-
-          <div className="take-away">
-              <h4>Take away:</h4>
-              <p>Would you still take that flight if it meant spending months without electricity?</p>
-          </div>
-
-          <div className="take-away">
-              <h4>Take away:</h4>
-              <p>Recycling plastic cannot in the right scale compensate for a flight.</p>
-          </div>
-
-        </div> */}
-
         <h1>Noteworthy</h1>
         <ul className="take-away-list">
           <li>Flying has a huge impact on your individual carbon footprint and takes up a massive part of you individual carbon budget.</li>
@@ -104,11 +87,7 @@ function Summary({ match }) {
         </ul> 
 
         <div className="footer"></div>
-
-{/*         <Link to={"/"}>
-            <button className="btn">Calculate new trip</button>
-        </Link> */}
-
+        
         <div className="next-btn">
           <Link to={"/info"} style={{ textDecoration: 'none'}} className="more-info">
             <button className="btn">More info</button>

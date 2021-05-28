@@ -1,26 +1,6 @@
-.btn {
-    display: inline-block;
-    padding: 0.5em 2.5em;
-    margin-top: 1em;
-    margin-bottom: 5em;
-    background: none;
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 14pt;
-    transition: transform 200ms ease-in-out;
-    text-transform: uppercase;
-    border: 1px solid black;
-    outline: none;
-  }
-  
-.btn:hover {
-    transform: scale(1.05);
-  }
-
-  #calculate {
+#calculate {
     margin-top: 12em;
-  }
+}
 
 .intro-title {
     margin-top: 5em;
@@ -38,17 +18,6 @@
     margin-bottom: 3em;
     display: table;
 } 
-
-input {
-    margin-right: 5em;
-    padding: 0.5em 1em 0.5em;
-}  
-
-li {
-    margin: 2em 0;
-    color: #282c34;
-    display: list-item;
-}
 
  .data-input-fields {
     font-size: 14pt;
@@ -86,7 +55,7 @@ li {
 .search-input .autocom-box {
   padding: 0px;
   max-height: 280px;
-   overflow-y: auto; 
+  overflow-y: auto; 
   /* opacity: 0;
   pointer-events: none; */
 

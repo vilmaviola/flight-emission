@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import '../css/Information.css'
+import '../css/Information.css';
+import '../css/Styling.css';
 import Information1 from '../Components/Information1';
 import Information2 from '../Components/Information2';
 import Information3 from '../Components/Information3';
