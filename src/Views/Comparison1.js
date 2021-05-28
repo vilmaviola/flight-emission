@@ -33,7 +33,6 @@ function Comparison1({ match }) {
   }
 
   function get_longLat(place) {
-    console.log(place);
     for(i in json) {
       if (json[i].airport_name == place){
         let latitude_ = json[i].lat_dec_deg;
@@ -47,12 +46,24 @@ function Comparison1({ match }) {
   function calculate_distance(from_long_lat, to_long_lat) {
     //haversine calculates distance in m, therefore multiply with 0.001 to get km
     const dist = haversine(from_long_lat, to_long_lat) * 0.001;
-    console.log(dist);
     if (match.params.roundTrip == "true") {
       return dist*2;    
     }
     else {
         return dist;    
+    }
+  }
+
+  function chartDivText() {
+    if (match.params.roundTrip == "true") {
+      return (
+        <p>A roundtrip flight between {fly_from} and {fly_to} equals {budget_percent}% of your individual carbon budget for a whole year</p>
+      );
+    }
+    else {
+      return(
+        <p>A one-way flight from {fly_from} to {fly_to} equals {budget_percent}% of your individual carbon budget for a whole year</p>
+      );
     }
   }
 
@@ -76,7 +87,7 @@ function Comparison1({ match }) {
                         <p className="tooltiptext-text">This air trip corresponds to a carbon emission of {carbon_emission} kg</p>
                     </span>
                   </div>        
-                  <p>An air trip from {fly_from} to {fly_to} equals {budget_percent}% of your individual carbon budget for a whole year</p>
+                  {chartDivText()}
                   <p>That means you would go {over_budget}% over your CO2 budget that you have for 1 year</p>
               </div>
               
@@ -97,7 +108,7 @@ function Comparison1({ match }) {
                         <p className="tooltiptext-text">This air trip corresponds to a carbon emission of {carbon_emission} kg</p>
                     </span>
                   </div>        
-                  <p>An air trip from {fly_from} to {fly_to} equals {budget_percent}% of your individual carbon budget for a whole year</p>
+                  {chartDivText()}
               </div>
 
             <div className="chart">
