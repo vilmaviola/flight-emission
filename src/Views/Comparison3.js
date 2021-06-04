@@ -3,17 +3,17 @@ import "../css/Comparison3.css";
 import '../css/Styling.css';
 import {Link} from 'react-router-dom';
 import infoLogo from '../images/information-logotype.png';
-import plastic_recycle from '../images/plastic.png';
+import garbage_bin from '../images/plastic.png';
 
 function Comparison3({ match }) {
-    const recycled_plastic = Math.round((match.params.emissions/1.5) * 100) / 100;
-    const number_years = Math.round(recycled_plastic/8);
+    const plastic_kilogram = Math.round((match.params.emissions/1.5) * 100) / 100;
+    const number_years = Math.round(plastic_kilogram/8);
+
 
     function airTripText() {
         if (match.params.roundTrip == "true") {
           return (
             <p>A roundtrip flight between {match.params.from} and {match.params.destination} corresponds to an emission of {match.params.emissions}kg CO2</p>
-
           );
         }
         else {
@@ -41,13 +41,14 @@ function Comparison3({ match }) {
                     <p className="tooltiptext-text">For 1 kg of recycled plastics, the saving is 1.5 kg of CO2</p>
                 </span>
             </div>
-
-            <p>To reduce the same amount of kilograms CO2 that this trip emits you would have to recycle {recycled_plastic}kg of plastic.</p>
+            <p>To reduce the same amount of kilograms CO2 that this trip emits you would have to recycle {plastic_kilogram}kg of plastic.</p>
         </div>
 
             <div className="recycling_bin_container">
-                <p>{recycled_plastic} kg plastic</p>
-                <img src={plastic_recycle} className="recycling_bin" alt="Plastic recycling bin" />
+                <p>{match.params.emissions} kg CO2 | {plastic_kilogram} kg plastic</p>
+
+                {/* <p>{plastic_kilogram} kg plastic</p> */}
+                <img src={garbage_bin} className="recycling_bin" alt="Plastic recycling bin" />
             </div>
 
             <div className="info-box--years">            
@@ -60,7 +61,7 @@ function Comparison3({ match }) {
                     </span>
                 </div>
 
-                <p>It will take you approx. {number_years} years to recycle {recycled_plastic}kg of plastic.</p>
+                <p>It will take you approx. {number_years} years to recycle {plastic_kilogram}kg of plastic.</p>
             </div>
 
         <div className="next-btn">
