@@ -4,7 +4,7 @@
 
 .App-header {
   /* background-color: #282c34; */
-  background-color: rgba(228, 238, 222, 1.10);
+  /* background-color: rgba(228, 238, 222, 1.10); */
   /*background-color: rgba(210, 244, 189, 0.81);*/
   font-size: calc(10px + 2vmin);
   color: white;
@@ -12,6 +12,7 @@
 
   display: flex;
   justify-content: space-between;
+  border-bottom: 0.4px solid #5e7684;
 }
 
 #title {
@@ -19,11 +20,23 @@
   color: #282c34;
   font-style: italic;
   font-size: 18pt;
+  margin-left: 2em;
 }
 
 .header-btn {
   font-size: 11pt;
   color: #282c34;
+  font-weight: bold;
   margin-left: 1em;
   margin-right: 1em;
+  float: left;
+}
+
+.header-btn:hover {
+  text-decoration: underline;
+  color: #87ac70;
+}
+
+.header-div {
+  display: table;
 }

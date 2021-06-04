@@ -27,6 +27,8 @@ function Comparison3({ match }) {
   return (
     <div>
         <h1>Plastic Recycle</h1>
+        <p className="part">Emission Comparison 3/3</p>
+
         <div className="start-subheading">
             {airTripText()}
         </div>

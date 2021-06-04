@@ -271,6 +271,8 @@ function Comparison1({ match }) {
     <div className="start">
 
         <h1>Carbon Budget</h1>
+        <p className="part">Emission Comparison 1/3</p>
+
         <div className="start-subheading">
             <div className="tooltip">
               <img src={infoLogo} className="info-logotype" alt="info-logo"/>

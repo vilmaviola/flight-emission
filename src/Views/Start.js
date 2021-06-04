@@ -99,21 +99,20 @@ function Start() {
     }
   }
 
-
   return (
     <div className="start">
         <p className="intro-title ">Calculate carbon emissions for air trip:</p>
 
         <div className="wrapper">
             <div className="search-input">
-              From: <input id="fromInput" type="text" placeholder="Enter city or airport..." autocomplete="off" required={true} value={from} onChange={(e) => {searchFrom_testing(e.target.value)}}/>
+              From: <input type="text" placeholder="Enter city or airport..." autocomplete="off" required={true} value={from} onChange={(e) => {searchFrom_testing(e.target.value)}}/>
               <div className="autocom-box">
                 {showsearchFromResult_testing(matches_from)}
               </div>
             </div>
 
             <div className="search-input">
-              To: <input id="toInput" type="text" placeholder="Enter city or airport..." autocomplete="off" required={true} value={destination} onChange={(e) => {searchTo_testing(e.target.value)}}/>
+              To: <input type="text" placeholder="Enter city or airport..." autocomplete="off" required={true} value={destination} onChange={(e) => {searchTo_testing(e.target.value)}}/>
               <div className="autocom-box">
                 {showsearchToResult_testing(matches_to)}
                 </div>

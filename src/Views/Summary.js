@@ -42,6 +42,7 @@ function Summary({ match }) {
         );    
     }
   }
+  
 
   function airTripText() {
     if (match.params.roundTrip == "true") {
@@ -52,6 +53,38 @@ function Summary({ match }) {
     else {
       return(
         <p>A one-way flight from {match.params.from} to {match.params.destination} corresponds to an emission of {match.params.emissions} kg CO2. </p>
+      );
+    }
+  }
+
+  function comparison_2() {
+    if (electricity_percent > 100) {
+      return (
+        <div>
+            <div>
+              <h3>Household Electricity</h3>
+              <p>{electricity_percent}% of a household´s electricity consumption for a whole year</p>
+           
+              <img src={unlit} className="bulb" id="unlit-alone" alt="Unlit bulb"/>
+              <p>A household would have to live without electricity for {months_used} months</p>
+          </div>
+
+        </div>
+      );
+    }
+    else {
+      return (
+            <div>
+              <h3>Household Electricity</h3>
+              <p>{electricity_percent}% of a household´s electricity consumption for a whole year</p>
+            
+              <img src={unlit} className="bulb" alt="Unlit bulb"/>
+              <p>A household would have to live without electricity for {months_used} months</p>
+
+              <img src={lit} className="bulb" alt="Lit bulb"/>
+              <p>Live with electricity for {months_left} months</p>
+
+            </div>
       );
     }
   }
@@ -72,15 +105,7 @@ function Summary({ match }) {
           </div>
 
           <div className="summary-box" id="comparison2">
-            <h3>Household Electricity</h3>
-            <p>{electricity_percent}% of a household´s electricity consumption for a whole year</p>
-           
-            <img src={unlit} className="bulb" alt="Unlit bulb"/>
-            <p>Live without electricity for {months_used} months</p>
-
-            <img src={lit} className="bulb" alt="Lit bulb"/>
-            <p>Live with electricity for {months_left} months</p>
-
+            {comparison_2()}
           </div>
 
           <div className="summary-box" id="comparison3">

@@ -199,6 +199,7 @@ function Comparison2({ match }) {
   return (
     <div>
         <h1>Household Electricity</h1>
+        <p className="part">Emission Comparison 2/3</p>
         <div className="start-subheading">
           {airTripText()}          
           <div className="info-box--carbon">            

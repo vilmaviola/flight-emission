@@ -8,7 +8,7 @@
     /* max-width: fit-content; */
     padding: 1em 1em 1em;
     float: left;
-    border: 2px solid rgba(241, 28, 14, 0.55);
+    border: 2px solid rgba(210, 244, 189, 0.91);
     color: #282c34;
 }
 
@@ -52,6 +52,13 @@
     max-width: 100px;
     max-height: 100px;
     margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#unlit-alone{
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 6em;
     margin-bottom: 1em;
 }
 

@@ -1,6 +1,6 @@
 .calender-wrap-div {
   justify-content: center;
-  border: 3px solid rgba(241, 28, 14, 0.55);
+  border: 2px solid rgba(241, 28, 14, 0.55);
   box-sizing: border-box;
   font-size: 18pt;
   margin-top: 1em;
@@ -14,7 +14,7 @@
 .info-box {
   justify-content: center;
   font-size: 18pt;
-  margin-top: 1em;
+  margin-top: 4em;
   padding: 0.1em 0.5em 0.1em 0.5em;
   display: inline-block;
 }
@@ -32,7 +32,7 @@
 
 .info-box--carbon {  
     justify-content: center;
-    background: rgba(196, 196, 196, 0.62);
+    background: rgba(196, 196, 196, 0.486);
     border: 0.1px solid #000000;
     box-sizing: border-box;
     display: inline-block;
@@ -43,7 +43,7 @@
 
   #calender-wrap--first-p {
     justify-content: center;
-    border: 3px solid rgba(241, 28, 14, 0.55);
+    border: 2px solid rgba(241, 28, 14, 0.55);
 
     box-sizing: border-box;
     display: inline-block;

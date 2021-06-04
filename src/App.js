@@ -8,6 +8,7 @@ import Comparison3 from './Views/Comparison3';
 import Summary from './Views/Summary';
 import Information from './Views/Information';
 import ScrollToTop from './Components/ScrollToTop';
+import About from './Views/About';
 
 function App() {
   return (
@@ -20,9 +21,16 @@ function App() {
 
             <h2 id="title">Flight Emission Calculator and Comparator</h2>
 
-             <Link to={"/flight-emission/info"} style={{ textDecoration: 'none'}} className="more-info">
-                <p className="header-btn">More Information</p>
-            </Link> 
+            <div className="header-div">
+              <Link to={"/flight-emission/info"} style={{ textDecoration: 'none'}} className="more-info">
+                  <p className="header-btn">More Information</p>
+              </Link> 
+
+              <Link to={"/flight-emission/about"} style={{ textDecoration: 'none'}} className="more-info">
+                  <p className="header-btn">About</p>
+              </Link> 
+            </div>
+
         </header>
 
         {/* <Fragment> */}
@@ -34,6 +42,8 @@ function App() {
             <Route path="/flight-emission/:from/:destination/:roundTrip/:emissions/plastic-recycle" exact component={Comparison3}/>
             <Route path="/flight-emission/:from/:destination/:roundTrip/:emissions/summary" exact component={Summary}/>
             <Route path="/flight-emission/info" exact component={Information}/>
+            <Route path="/flight-emission/about" exact component={About}/>
+
           </Switch>
         {/* </Fragment> */}
 

@@ -1,6 +1,6 @@
 .info-box--carbon {
   justify-content: center;
-  background: rgba(196, 196, 196, 0.62);
+  background: rgba(196, 196, 196, 0.486);
   border: 0.1px solid #000000;
   box-sizing: border-box;
   display: inline-block;
@@ -10,7 +10,7 @@
 }
 
 .info-box--years {
-  border: 3px solid rgba(241, 28, 14, 0.55);
+  border: 2px solid rgba(241, 28, 14, 0.55);
   box-sizing: border-box;
   font-size: 18pt;
   padding: 0.1em 0.5em 0.1em 0.5em;
