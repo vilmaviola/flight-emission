@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/flight-emission/static/css/main.644432a5.chunk.css",
-    "main.js": "/flight-emission/static/js/main.61e09c68.chunk.js",
-    "main.js.map": "/flight-emission/static/js/main.61e09c68.chunk.js.map",
+    "main.js": "/flight-emission/static/js/main.1c3e0dda.chunk.js",
+    "main.js.map": "/flight-emission/static/js/main.1c3e0dda.chunk.js.map",
     "runtime-main.js": "/flight-emission/static/js/runtime-main.7f7dffc4.js",
     "runtime-main.js.map": "/flight-emission/static/js/runtime-main.7f7dffc4.js.map",
     "static/js/2.b50e8c97.chunk.js": "/flight-emission/static/js/2.b50e8c97.chunk.js",
@@ -40,13 +40,13 @@
     "static/media/9.b3a38a87.png": "/flight-emission/static/media/9.b3a38a87.png",
     "static/media/information-logotype.a6cfbf5b.png": "/flight-emission/static/media/information-logotype.a6cfbf5b.png",
     "static/media/lit_bulb.17a94f96.jpg": "/flight-emission/static/media/lit_bulb.17a94f96.jpg",
-    "static/media/plastic.59234b26.png": "/flight-emission/static/media/plastic.59234b26.png",
+    "static/media/plastic.be0a4c2b.png": "/flight-emission/static/media/plastic.be0a4c2b.png",
     "static/media/unlit_bulb.4d681a6d.jpg": "/flight-emission/static/media/unlit_bulb.4d681a6d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7f7dffc4.js",
     "static/js/2.b50e8c97.chunk.js",
     "static/css/main.644432a5.chunk.css",
-    "static/js/main.61e09c68.chunk.js"
+    "static/js/main.1c3e0dda.chunk.js"
   ]
 }
